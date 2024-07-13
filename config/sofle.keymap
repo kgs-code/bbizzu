@@ -25,7 +25,7 @@
         compatible = "zmk,combos";
 
         combo3 {
-            bindings = <&to 6>;
+            bindings = <&to 1>;
             key-positions = <53 54>;
         };
 
@@ -76,24 +76,24 @@
             label = "SYMBOL201502";
         };
 
-        qd: symbol_home {
+        pw: pw {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&kp N3 &kp N0 &kp N1 &kp N5 &kp C &kp J &kp S &kp T &kp K &kp STAR>,
                 <&macro_wait_time 30>;
 
-            label = "SYMBOL_HOME";
+            label = "pw";
         };
 
-        new_macro: new_macro {
+        ttt: ttt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&kp LS(T) &kp LS(T) &kp LS(T) &kp N3 &kp N3 &kp N5 &kp N6 &kp N4>,
                 <&macro_wait_time 30>;
 
-            label = "NEW_MACRO";
+            label = "TTT";
         };
     };
 
@@ -137,7 +137,7 @@
             bindings = <
 &kp TILDE  &kp F1         &kp F2        &kp F3        &kp F4        &kp F5                          &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS         &kp F10    &kp F11
 &kp GRAVE  &symbol201502  &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp MINUS                       &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS        &kp N0     &kp APOS
-&trans     &qd            &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp NUMBER_0                    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY  &kp SEMI   &kp APOS
+&trans     &pw            &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp NUMBER_0                    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY  &kp SEMI   &kp APOS
 &trans     &trans         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &trans    &trans  &kp NUMBER_0  &kp DOT       &kp ENTER     &kp KP_DIVIDE    &kp TILDE  &kp SCROLLLOCK
                           &trans        &trans        &trans        &trans        &trans    &trans  &trans        &trans        &trans        &trans
             >;
@@ -157,7 +157,7 @@
 
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                       &kp CARET       &trans          &kp STAR         &trans                &trans                 &kp BACKSPACE
-&trans      &trans           &trans        &trans          &trans          &trans                             &new_macro      &qd             &kp UP           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans      &trans           &trans        &trans          &trans          &pw                                &ttt            &pw             &kp TAB          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
 &trans      &kp EQUAL        &kp PLUS      &kp EQUAL       &kp UP_ARROW    &kp UNDER                          &kp MINUS       &kp UP_ARROW    &kp EQUAL        &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
 &trans      &kp KP_MULTIPLY  &kp SLASH     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE
                              &trans        &trans          &trans          &trans           &trans    &trans  &trans          &trans          &trans           &trans
