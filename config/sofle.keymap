@@ -137,9 +137,9 @@
 
             bindings = <
 &kp LC(LA(DELETE))  &kp F1  &kp F2         &kp F3        &kp F4        &kp F5                          &kp PRINTSCREEN  &kp SCROLLLOCK  &kp END       &kp PLUS         &kp QUESTION     &trans
-&kp TILDE           &ttt    &kp N7         &kp NUMBER_8  &kp NUMBER_9  &kp MINUS                       &kp NUMBER_7     &kp NUMBER_8    &kp NUMBER_9  &kp MINUS        &kp EXCLAMATION  &trans
+&kp TAB             &ttt    &kp N7         &kp NUMBER_8  &kp NUMBER_9  &kp MINUS                       &kp NUMBER_7     &kp NUMBER_8    &kp NUMBER_9  &kp MINUS        &kp EXCLAMATION  &trans
 &trans              &pw     &kp NUMBER_4   &kp N5        &kp NUMBER_6  &kp NUMBER_0                    &kp NUMBER_4     &kp NUMBER_5    &kp NUMBER_6  &kp KP_MULTIPLY  &kp CARET        &trans
-&trans              &trans  &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &trans    &trans  &kp NUMBER_1     &kp NUMBER_2    &kp NUMBER_3  &kp KP_DIVIDE    &kp TILDE        &trans
+&trans              &trans  &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &trans    &trans  &kp NUMBER_1     &kp NUMBER_2    &kp NUMBER_3  &kp KP_DIVIDE    &kp TILDE        &kp TILDE
                             &kp RIGHT_ALT  &kp LC(C)     &kp LC(V)     &kp LC(P)     &trans    &trans  &kp NUMBER_0     &trans          &trans        &trans
             >;
 
